@@ -9,7 +9,7 @@ function App() {
     <BrowserRouter>
       <Layout>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/www.cm-santa-maria.com/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         </Layout>
