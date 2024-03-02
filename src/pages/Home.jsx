@@ -1,4 +1,8 @@
+import Swiper from "swiper";
 import imagenDra from "../assets/logo/imagen-dra.png";
+import testimonios from "../assets/logo/testimonios.png";
+import SliderPagination from "../components/SliderPagination";
+import SliderEquipo from "../components/SliderEquipo";
 const Home = () => {
   return (
     <>
@@ -41,13 +45,13 @@ const Home = () => {
             </div>
             <div className="stats__item flex flex-1 xl:border-r flex-col items-center">
               <div className="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">
-                5
+                3
               </div>
               <div>Médicos Especialistas</div>
             </div>
             <div className="stats__item flex flex-1 xl:border-r flex-col items-center">
               <div className="text-4xl xl:text-[64px] font-semibold text-accent-tertiary xl:mb-2">
-                2
+                1
               </div>
               <div>Sucursales</div>
             </div>
@@ -78,7 +82,7 @@ const Home = () => {
           <div className="grid xl:grid-cols-4 gap-5 px-8 xl:px-0">
             <div className="bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
               <div className="mb-[15px]">
-                <i class="ri-home-gear-line text-4xl"></i>
+                <i className="ri-home-gear-line text-4xl"></i>
               </div>
               <h3 className="h3 mb-[10px]">Médicos Especialistas</h3>
               <p className=" font-light leading-normal max-w-[300px]">
@@ -88,7 +92,7 @@ const Home = () => {
             </div>
             <div className="bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
               <div className="mb-[15px]">
-                <i class="ri-women-line text-4xl"></i>
+                <i className="ri-women-line text-4xl"></i>
               </div>
               <h3 className="h3 mb-[10px]">Apoyo en el Embarazo </h3>
               <p className=" font-light leading-normal max-w-[300px]">
@@ -98,7 +102,7 @@ const Home = () => {
             </div>
             <div className="bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
               <div className="mb-[15px]">
-                <i class="ri-body-scan-line text-4xl"></i>
+                <i className="ri-body-scan-line text-4xl"></i>
               </div>
               <h3 className="h3 mb-[10px]">Ecografias 4D</h3>
               <p className=" font-light leading-normal max-w-[300px]">
@@ -108,7 +112,7 @@ const Home = () => {
             </div>
             <div className="bg-white p-[30px] rounded-[10px] shadow-custom2 min-h-[288px] flex flex-col items-center text-center">
               <div className="mb-[15px]">
-                <i class="ri-shield-cross-fill text-4xl"></i>
+                <i className="ri-shield-cross-fill text-4xl"></i>
               </div>
               <h3 className="h3 mb-[10px]">Apoyo en el Tartamiento</h3>
               <p className=" font-light leading-normal max-w-[300px]">
@@ -132,10 +136,10 @@ const Home = () => {
                   <i className="ri-arrow-down-s-line text-[26px] text-primary"></i>
                 </div>
                 <select className=" appearance-none outline-none h-full w-full bg-transparent px-4">
-                  <option value="1">Select departament</option>
-                  <option value="2">Departamento Ginecologia</option>
-                  <option value="3">Departamento Urologia</option>
-                  <option value="4">Departamento Medicina Interna</option>
+                  <option value="1">Selecionar Especialidad</option>
+                  <option value="2">Especialidad Ginecología</option>
+                  <option value="3">Especialidad Urología</option>
+                  <option value="4">Especialidad Medicina Interna</option>
                 </select>
               </div>
               <div className="select relative flex items-center ">
@@ -163,16 +167,41 @@ const Home = () => {
               />
             </div>
             <div className="flex flex-col xl:flex-row gap-5">
-              <input
-                className="input"
-                type="date"              />
-              <input
-                className="input"
-              type="time"
-              />
+              <input className="input" type="date" />
+              <input className="input" type="time" />
             </div>
-            <button className="btn btn-lg btn-accent self-start" type="submit">Reservar una cita</button>
+            <button className="btn btn-lg btn-accent self-start" type="submit">
+              Reservar una cita
+            </button>
           </form>
+        </div>
+      </section>
+      {/* mensajes */}
+      <section className="flex justify-center items-center bg-grey bg-cover bg-right bg-no-repeat py-12 xl:min-h-[595px] xl:py-0">
+        <div className="container mx-auto">
+          <div className="flex flex-col items-center gap-x-14 xl:flex-row">
+            <div className=" hidden xl:flex">
+              <img src={testimonios} alt="testimonios" className="w-1/2 mt-8" />
+            </div>
+            {/* slider */}
+            <div className=" max-w-[98%] xl:max-w-[710px]">
+              <div className="h-[400px]">
+                <SliderPagination />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*Nuestro Equipo */}
+      <section>
+        <div className="container mx-auto mt-8">
+          {/* Titulo*/}
+          <h2 className="h2 mb-[50px] text-center xl:text-left ">
+            Nuestro Equipo
+          </h2>
+          <div className=" min-h-[400px] ">
+            <SliderEquipo/>
+          </div>
         </div>
       </section>
       <div className="h-[4000px]"></div>

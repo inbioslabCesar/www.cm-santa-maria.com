@@ -69,3 +69,6 @@ h1,h2,h3,h4,h5,h6 {
 .faq__item.open .faq__answer {
     @apply h-full;
 }
+.swiper {
+  @apply  w-[450px]  h-[300px];
+  }
