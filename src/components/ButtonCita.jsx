@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import swal from 'sweetalert';
 
 export const ButtonCita = () => {
   const form = useRef();
@@ -12,14 +13,23 @@ export const ButtonCita = () => {
         publicKey: "uKX7C-76C-IKSpEAh",
       })
       .then(
-        () => {
+          () => {
+            
           console.log("SUCCESS!");
         },
         (error) => {
           console.log("FAILED...", error.text);
         }
       );
-  };
+    };
+    const mostrarAlerta = () => {
+        swal({
+            title: "Exelente!!",
+            text: "Nuestro personal se contactara en un momento.",
+            icon: "success",
+            button: "Aceptar"
+        })
+    }
 
   return (
     <>
@@ -61,7 +71,7 @@ export const ButtonCita = () => {
           <input className="input" type="date" name="user_date" placeholder="Fecha de cita"/>
           <input className="input" type="time" name="user_time" placeholder="Hora de cita "/>
         </div>
-        <button className="btn btn-lg btn-accent self-start" type="submit">
+        <button className="btn btn-lg btn-accent self-start" type="submit" onClick={() => mostrarAlerta()}>
           Reservar una cita
         </button>
       </form>
