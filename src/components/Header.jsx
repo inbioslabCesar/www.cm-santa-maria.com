@@ -26,7 +26,7 @@ const Header = () => {
           </div>
           {/* btn */}
           <button className="btn btn-sm btn-outline w-[240px]  mx-auto cursor-pointer lg:mx-0 md:text-[15px]">
-            <a href="https://wa.me/51947549721">
+            <a href="https://wa.me/51947549721?text=Hola quiero reservar una cita">
                Reservar Cita
             </a>
            

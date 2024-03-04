@@ -3,6 +3,7 @@ import imagenDra from "../assets/logo/imagen-dra.png";
 import testimonios from "../assets/logo/testimonios.png";
 import SliderPagination from "../components/SliderPagination";
 import SliderEquipo from "../components/SliderEquipo";
+import { ButtonCita } from "../components/ButtonCita";
 const Home = () => {
   return (
     <>
@@ -25,7 +26,7 @@ const Home = () => {
                 resultados.
               </p>
               <button className="btn btn-lg btn-accent mx-auto">
-                <a href="https://wa.me/51947549721">
+                <a href="https://wa.me/51947549721?text=Hola quiero información de un servicion">
 
                 Contáctanos
                 </a>
@@ -132,51 +133,7 @@ const Home = () => {
             Reservar cita o llamar:
             <span className="text-accent-tertiary">947549721</span>
           </h2>
-          <form className="flex flex-col gap-y-5">
-            <div className="flex flex-col xl:flex-row gap-5">
-              <div className="select relative flex items-center ">
-                <div className="absolute right-4">
-                  <i className="ri-arrow-down-s-line text-[26px] text-primary"></i>
-                </div>
-                <select className=" appearance-none outline-none h-full w-full bg-transparent px-4">
-                  <option value="1">Selecionar Especialidad</option>
-                  <option value="2">Especialidad Ginecología</option>
-                  <option value="3">Especialidad Urología</option>
-                  <option value="4">Especialidad Medicina Interna</option>
-                </select>
-              </div>
-              <div className="select relative flex items-center ">
-                <div className="absolute right-4">
-                  <i className="ri-arrow-down-s-line text-[26px] text-primary"></i>
-                </div>
-                <select className=" appearance-none outline-none h-full w-full bg-transparent px-4">
-                  <option value="1">Select Doctor</option>
-                  <option value="2">Dr. Miguel Valverde</option>
-                  <option value="3">Dra. Susana Pézo</option>
-                  <option value="4">Dr. César Pino</option>
-                </select>
-              </div>
-            </div>
-            <div className="flex flex-col xl:flex-row gap-5">
-              <input
-                type="text"
-                className="input"
-                placeholder="Nombre Completo"
-              />
-              <input
-                type="text"
-                className="input"
-                placeholder="Numero de Celular"
-              />
-            </div>
-            <div className="flex flex-col xl:flex-row gap-5">
-              <input className="input" type="date" />
-              <input className="input" type="time" />
-            </div>
-            <button className="btn btn-lg btn-accent self-start" type="submit">
-              Reservar una cita
-            </button>
-          </form>
+          <ButtonCita/>
         </div>
       </section>
       {/* mensajes */}
