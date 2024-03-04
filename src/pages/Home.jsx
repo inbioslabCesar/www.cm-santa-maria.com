@@ -3,7 +3,6 @@ import imagenDra from "../assets/logo/imagen-dra.png";
 import testimonios from "../assets/logo/testimonios.png";
 import SliderPagination from "../components/SliderPagination";
 import SliderEquipo from "../components/SliderEquipo";
-import ReactWhatsapp from "react-whatsapp";
 const Home = () => {
   return (
     <>
@@ -25,11 +24,12 @@ const Home = () => {
                 atención, calidez, oportunidad y confiabilidad en nuestros
                 resultados.
               </p>
-              <ReactWhatsapp number="51947549721" message="Solícito información de un especialista">
-                <button className="btn btn-lg btn-accent mx-auto">
-                  Contáctanos
-                </button>
-              </ReactWhatsapp>
+              <button className="btn btn-lg btn-accent mx-auto">
+                <a href="https://wa.me/51947549721">
+
+                Contáctanos
+                </a>
+              </button>
             </div>
             <div className="hidden xl:flex max-w-[814px] self-end justify-center">
               <img src={imagenDra} alt="imagenDra" className=" w-[50%]" />
@@ -196,10 +196,10 @@ const Home = () => {
         </div>
       </section>
       {/*Nuestro Equipo */}
-      <section>
+      <section >
         <div className="container mx-auto mt-8">
           {/* Titulo*/}
-          <h2 className="h2 mb-[50px] flex items-center justify-center text-center xl:text-left">
+          <h2 className="h2 mb-[50px] flex justify-center text-center xl:text-left">
             Nuestro Equipo
           </h2>
           <div className=" min-h-[400px] ">

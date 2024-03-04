@@ -2,7 +2,6 @@ import "remixicon/fonts/remixicon.css";
 import logo from "../assets/logo/logo-santa-maria.png";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ReactWhatsapp from "react-whatsapp";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
@@ -26,11 +25,12 @@ const Header = () => {
             <div className=" text-secondary">947549721</div>
           </div>
           {/* btn */}
-          <ReactWhatsapp number="51947549721" message="Solícito reservar una cita">
-            <button className="btn btn-sm btn-outline w-[240px]  mx-auto cursor-pointer lg:mx-0 md:text-[15px]">
-              Reservar Cita
-            </button>
-          </ReactWhatsapp>
+          <button className="btn btn-sm btn-outline w-[240px]  mx-auto cursor-pointer lg:mx-0 md:text-[15px]">
+            <a href="https://wa.me/51947549721">
+               Reservar Cita
+            </a>
+           
+          </button>
           {/* Mobile Nav */}
 
           <nav
@@ -48,109 +48,58 @@ const Header = () => {
             </div>
             <div className=" px-3 flex  flex-col gap-y-12 h-full ">
               <a href="#" className="px-12">
-                <img src={logo} alt="" className="w-48" />
+                <img src={logo} alt="" className="w-48"/>
               </a>
               <ul className="list-none -mt-8">
                 <li className="flex py-5">
-                  <Link
-                    to="/"
-                    className="text-secondary hover:text-accent transition-all duration-300  no-underline">
-                    Inicio
-                  </Link>
+                  <Link to="/" className="text-secondary hover:text-accent transition-all duration-300  no-underline">Inicio</Link>
                 </li>
                 <li className="flex py-5">
-                  <Link
-                    to="/"
-                    className="text-secondary hover:text-accent transition-all duration-300  no-underline">
-                    Especialistas
-                  </Link>
+                  <Link to="/" className="text-secondary hover:text-accent transition-all duration-300  no-underline">Especialistas</Link>
                 </li>
                 <li className="flex py-5">
-                  <Link
-                    to="/"
-                    className="text-secondary hover:text-accent transition-all duration-300  no-underline">
-                    Promociones
-                  </Link>
+                  <Link to="/" className="text-secondary hover:text-accent transition-all duration-300  no-underline">Promociones</Link>
                 </li>
                 <li className="flex py-5">
-                  <Link
-                    to="/"
-                    className="text-secondary hover:text-accent transition-all duration-300  no-underline">
-                    Servicios
-                  </Link>
+                  <Link to="/" className="text-secondary hover:text-accent transition-all duration-300  no-underline">Servicios</Link>
                 </li>
                 <li className="flex py-5">
-                  <Link
-                    to="/"
-                    className="text-secondary hover:text-accent transition-all duration-300  no-underline">
-                    Contacto
-                  </Link>
+                  <Link to="/" className="text-secondary hover:text-accent transition-all duration-300  no-underline">Contacto</Link>
                 </li>
               </ul>
               {/* Form */}
               <form className="relative flex gap-x-[10px] left-5">
                 <label htmlFor="">
                   <i className="ri-search-line text-2xl text-accent"></i>
+                  
                 </label>
-                <input
-                  type="text"
-                  id=""
-                  placeholder="Buscar..."
-                  className="outline-none border-b-2 w-[160px] focus:border-accent placeholder:italic p-2"
-                />
+                <input type="text" id="" placeholder="Buscar..." className="outline-none border-b-2 w-[160px] focus:border-accent placeholder:italic p-2"/>
               </form>
             </div>
           </nav>
           <nav className=" bg-white absolute w-full left-0 -bottom-[86px] shadow-custom1 h-16 rounded-[10px] hidden lg:flex lg:items-center lg:justify-between lg:px-[50px]">
-            <ul className="flex gap-x-4">
-              <li className="flex py-5 ">
-                <Link
-                  to="/"
-                  className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">
-                  Inicio
-                </Link>
-              </li>
-              <li className="flex py-5">
-                <Link
-                  to="/"
-                  className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">
-                  Especialistas
-                </Link>
-              </li>
-              <li className="flex py-5 ">
-                <Link
-                  to="/"
-                  className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">
-                  Promociones
-                </Link>
-              </li>
-              <li className="flex py-5">
-                <Link
-                  to="/"
-                  className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">
-                  Servicios
-                </Link>
-              </li>
-              <li className="flex py-5">
-                <Link
-                  to="/"
-                  className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">
-                  Contacto
-                </Link>
-              </li>
+          <ul className="flex gap-x-4">
+                <li className="flex py-5 ">
+                  <Link to="/" className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">Inicio</Link>
+                </li>
+                <li className="flex py-5">
+                  <Link to="/" className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">Especialistas</Link>
+                </li>
+                <li className="flex py-5 ">
+                  <Link to="/" className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">Promociones</Link>
+                </li>
+                <li className="flex py-5">
+                  <Link to="/" className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">Servicios</Link>
+                </li>
+                <li className="flex py-5">
+                  <Link to="/" className="border-r pr-4 text-secondary hover:text-accent transition-all duration-300  no-underline">Contacto</Link>
+                </li>
             </ul>
             <form className="relative flex gap-x-[10px]">
-              <label
-                htmlFor="search-input"
-                className="flex justify-center items-center group">
-                <i className="ri-search-line text-2xl text-accent "></i>
+              <label htmlFor="search-input" className="flex justify-center items-center group">
+              <i className="ri-search-line text-2xl text-accent "></i>
               </label>
-              <input
-                id="search-input"
-                type="text"
-                placeholder="Buscar..."
-                className=" border-accent p-2 outline-none w-[100px] focus:w-[180] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-150"
-              />
+              <input id="search-input" type="text" placeholder="Buscar..." className=" border-accent p-2 outline-none w-[100px] focus:w-[180] focus:border-b-2 focus:border-accent placeholder:italic placeholder:text-base transition-all duration-150" />
             </form>
           </nav>
         </div>
