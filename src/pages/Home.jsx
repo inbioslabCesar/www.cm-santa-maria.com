@@ -131,7 +131,7 @@ const Home = () => {
         <div className="container mx-auto">
           <h2 className="h2 mb-5 xl:mb-[50px] text-center xl:text-left">
             Reservar cita o llamar:
-            <span className="text-accent-tertiary">947549721</span>
+            <span className="text-accent-tertiary ml-2">947549721</span>
           </h2>
           <ButtonCita/>
         </div>
