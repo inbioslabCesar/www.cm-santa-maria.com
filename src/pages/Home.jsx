@@ -26,7 +26,7 @@ const Home = () => {
                 resultados.
               </p>
               <button className="btn btn-lg btn-accent mx-auto">
-                <a href="https://wa.me/51947549721?text=Hola quiero información de un servicion">
+                <a href="https://wa.me/51947549721?text=Hola solicito información de un servicio médico">
 
                 Contáctanos
                 </a>
