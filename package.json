@@ -15,6 +15,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.22.1",
+    "react-whatsapp": "^0.3.0",
     "remixicon": "^4.1.0",
     "scrollreveal": "^4.0.9",
     "swiper": "^11.0.6"

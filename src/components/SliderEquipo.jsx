@@ -27,7 +27,7 @@ export default function SliderEquipo() {
               {/* info */}
               <div className="flex flex-col justify-center items-center">
                 {/* name */}
-                <h4 className="h4">Dr Miguel A. Valverde</h4>
+                <h4 className="h4">Dr. Miguel A. Valverde</h4>
                 {/* job */}
                 <div className="-mt-1 uppercase font-medium tracking-[2.24px] text-[#9ab4b7]">
                   Ginecología
@@ -49,7 +49,7 @@ export default function SliderEquipo() {
               {/* info */}
               <div className="flex flex-col justify-center items-center">
                 {/* name */}
-                <h4 className="h4">Dra Susana Pézo</h4>
+                <h4 className="h4">Dra. Susana Pézo</h4>
                 {/* job */}
                 <div className="-mt-1 uppercase font-medium tracking-[2.24px] text-[#9ab4b7]">Urología</div>
                 {/* desc */}
@@ -69,7 +69,7 @@ export default function SliderEquipo() {
               {/* info */}
               <div className="flex flex-col justify-center items-center">
                 {/* name */}
-                <h4 className="h4">Dr César Pino</h4>
+                <h4 className="h4">Dr. César Pino</h4>
                 {/* job */}
                 <div className="-mt-1 uppercase font-medium tracking-[2.24px] text-[#9ab4b7]">Medicina Interna</div>
                 {/* desc */}
