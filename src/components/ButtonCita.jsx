@@ -29,7 +29,7 @@ export const ButtonCita = () => {
             <div className="absolute right-4">
               <i className="ri-arrow-down-s-line text-[26px] text-primary"></i>
             </div>
-            <select name="user_especialidad"  className=" appearance-none outline-none h-full w-full bg-transparent px-4">
+            <select name="user_especialista"  className=" appearance-none outline-none h-full w-full bg-transparent px-4">
               <option value="1">Selecionar Especialidad</option>
               <option value="2">Especialidad Ginecología</option>
               <option value="3">Especialidad Urología</option>
